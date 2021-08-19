@@ -1,5 +1,7 @@
-const {Client, MessageEmbed, Collection} = require("discord.js");
-const client = bot = new Client();
+const { Client, MessageEmbed, Collection, Intents } = require("discord.js");
+const client = new Client({
+    "intents": [Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS]
+});
 const { readdirSync } = require("fs");
 
 const config = require("./config.json")
