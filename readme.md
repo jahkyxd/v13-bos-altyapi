@@ -4,4 +4,4 @@ commands dosyası biraz karışık gelebilir ama commandsın içindeki 3 klasör
 
 # OKU
 
-glitch kullananlar glitche uygun package koymayı unutmasınlar
+glitchte çalışmazke çünkü glitch nodejs 16.?.? kaldrımamake 
