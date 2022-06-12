@@ -33,7 +33,7 @@ readdirSync('./commands/Advanced', { encoding: 'utf8' }).filter(file => file.end
     command.aliases.forEach((otherUses) => { aliases.set(otherUses, command.name); })
 })
 
-client.on('message', message => {
+client.on('messageCreate', message => {
     if (!message.guild || message.author.bot || !message.content.startsWith(config.bot.prefix)) return;
     const args = message.content.slice(1).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
